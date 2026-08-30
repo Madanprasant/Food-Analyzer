@@ -1,0 +1,33 @@
+PLATESIGNAL — RUN LOCALLY (NO HOSTING REQUIRED)
+
+Open two PowerShell windows in this project folder.
+
+WINDOW 1 — BACKEND
+1. cd backend
+2. python -m pip install -r requirements.txt
+3. Copy ..\.env.example to ..\.env when you receive a MongoDB Atlas URL.
+4. Start the API for this computer and your local Wi-Fi network:
+   uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+
+WINDOW 2 — FRONTEND
+1. cd frontend
+2. npm install
+3. npm run dev
+
+OPEN ON THIS COMPUTER
+Open http://localhost:5173
+
+OPEN ON A PHONE WITHOUT HOSTING
+1. Connect the phone and this computer to the same Wi-Fi network.
+2. On the computer, run: ipconfig
+3. Find the IPv4 Address for the active Wi-Fi connection (example: 192.168.1.25).
+4. On the phone, open: http://YOUR-IPV4-ADDRESS:5173
+   Example: http://192.168.1.25:5173
+5. If Windows asks about a firewall rule, allow access on Private networks.
+
+The frontend automatically calls the backend on the same network address at port 8000.
+There is no need to publish, host, or deploy the project to preview it on a phone.
+
+IMPORTANT
+- Authentication needs MONGODB_URI in .env. Until you provide it, login/signup correctly reports that storage is unavailable.
+- Keep both PowerShell windows running while testing.

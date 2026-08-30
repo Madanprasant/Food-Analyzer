@@ -1,0 +1,2163 @@
+{
+  "project": "PLATESIGNAL",
+  "source_file": "ICMR-NIN IFCT 2017 machine-readable index.csv",
+  "model_class_count": 239,
+  "mapping_policy": {
+    "direct_ifct": "Use a suitable IFCT food record directly, with explicit serving basis.",
+    "composable_from_ifct_ingredients": "Do not treat the ingredients as the finished dish. Nutrition requires a documented recipe and portion.",
+    "needs_secondary_source": "Do not invent values. Obtain a suitable verified prepared-food source or keep nutrition pending."
+  },
+  "mappings": [
+    {
+      "model_class": "achar",
+      "canonical_food": "achar",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "adhirasam",
+      "canonical_food": "adhirasam",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "aloo gobi",
+      "canonical_food": "aloo gobi",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "aloo matar",
+      "canonical_food": "aloo matar",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "aloo methi",
+      "canonical_food": "aloo methi",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "aloo paratha",
+      "canonical_food": "aloo paratha",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "aloo puri",
+      "canonical_food": "aloo puri",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "aloo shimla mirch",
+      "canonical_food": "aloo shimla mirch",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "aloo tikki",
+      "canonical_food": "aloo tikki",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "amritsari kulcha",
+      "canonical_food": "amritsari kulcha",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "anarsa",
+      "canonical_food": "anarsa",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "anda curry",
+      "canonical_food": "anda curry",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "appam",
+      "canonical_food": "appam",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "apple",
+      "canonical_food": "apple",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Apple, big",
+      "ifct_code": "E001",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "apple pie",
+      "canonical_food": "apple pie",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "ariselu",
+      "canonical_food": "ariselu",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "bagels",
+      "canonical_food": "bagels",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "baingan bharta",
+      "canonical_food": "baingan bharta",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "balushahi",
+      "canonical_food": "balushahi",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "banana",
+      "canonical_food": "banana",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Banana, ripe, montham",
+      "ifct_code": "E009",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "banana chips",
+      "canonical_food": "banana chips",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "bandar laddu",
+      "canonical_food": "bandar laddu",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "basundi",
+      "canonical_food": "basundi",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "beetroot",
+      "canonical_food": "beetroot",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Beet root",
+      "ifct_code": "F001",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "besan cheela",
+      "canonical_food": "besan cheela",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "besan laddu",
+      "canonical_food": "besan laddu",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "bhatura",
+      "canonical_food": "bhatura",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "bhel puri",
+      "canonical_food": "bhel puri",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "bhindi masala",
+      "canonical_food": "bhindi masala",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "biryani",
+      "canonical_food": "biryani",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "boondi",
+      "canonical_food": "boondi",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "boondi laddu",
+      "canonical_food": "boondi laddu",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "brownie",
+      "canonical_food": "brownie",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "burger",
+      "canonical_food": "burger",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "butter chicken",
+      "canonical_food": "butter chicken",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "butter naan",
+      "canonical_food": "butter naan",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "cabbage",
+      "canonical_food": "cabbage",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Cabbage, green",
+      "ifct_code": "C015",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "cake",
+      "canonical_food": "cake",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "canned potatoes",
+      "canonical_food": "canned potatoes",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Potato, brown skin, big",
+      "ifct_code": "F006",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "capsicum",
+      "canonical_food": "capsicum",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Capsicum, green",
+      "ifct_code": "D033",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "carrots",
+      "canonical_food": "carrots",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Carrot, orange",
+      "ifct_code": "F002",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "cauliflower",
+      "canonical_food": "cauliflower",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Cauliflower",
+      "ifct_code": "D036",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "chaas",
+      "canonical_food": "chaas",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "chai",
+      "canonical_food": "chai",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "chak hao kheer",
+      "canonical_food": "chak hao kheer",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "cham cham",
+      "canonical_food": "cham cham",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "chana masala",
+      "canonical_food": "chana masala",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "chapati",
+      "canonical_food": "chapati",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "chhena kheeri",
+      "canonical_food": "chhena kheeri",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "chicken pizza",
+      "canonical_food": "chicken pizza",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "chicken razala",
+      "canonical_food": "chicken rezala",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "chicken rezala",
+      "canonical_food": "chicken rezala",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "chicken tikka",
+      "canonical_food": "chicken tikka",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "chicken tikka masala",
+      "canonical_food": "chicken tikka masala",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "chicken wings",
+      "canonical_food": "chicken wings",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Chicken, poultry, wing, skinless",
+      "ifct_code": "N004",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "chikki",
+      "canonical_food": "chikki",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "chilli pepper",
+      "canonical_food": "chilli pepper",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Chillies, red",
+      "ifct_code": "G022",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "chilli potato",
+      "canonical_food": "chilli potato",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "chivda",
+      "canonical_food": "chivda",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "chole bhature",
+      "canonical_food": "chole bhature",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "chop suey",
+      "canonical_food": "chop suey",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "chow mein",
+      "canonical_food": "chow mein",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "cooked oatmeal",
+      "canonical_food": "cooked oatmeal",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "cooked pasta",
+      "canonical_food": "cooked pasta",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "corn",
+      "canonical_food": "corn",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Corn, Baby",
+      "ifct_code": "D042",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "cucumber",
+      "canonical_food": "cucumber",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Cucumber, green, short",
+      "ifct_code": "D044",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "daal baati churma",
+      "canonical_food": "daal baati churma",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "daal puri",
+      "canonical_food": "daal puri",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "dal khichdi",
+      "canonical_food": "dal khichdi",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "dal makhani",
+      "canonical_food": "dal makhani",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "dal tadka",
+      "canonical_food": "dal tadka",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "dharwad pedha",
+      "canonical_food": "dharwad pedha",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "dhokla",
+      "canonical_food": "dhokla",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "doodhpak",
+      "canonical_food": "doodhpak",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "double ka meetha",
+      "canonical_food": "double ka meetha",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "doughnut",
+      "canonical_food": "doughnut",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "dum aloo",
+      "canonical_food": "dum aloo",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "falooda",
+      "canonical_food": "falooda",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "fish curry",
+      "canonical_food": "fish curry",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "fried chicken",
+      "canonical_food": "fried chicken",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "fried fish",
+      "canonical_food": "fried fish",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "fried rice",
+      "canonical_food": "fried rice",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "gajar ka halwa",
+      "canonical_food": "gajar ka halwa",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "garlic",
+      "canonical_food": "garlic",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Garlic, big clove",
+      "ifct_code": "G011",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "garlic bread",
+      "canonical_food": "garlic bread",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "garlic naan",
+      "canonical_food": "garlic naan",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "gavvalu",
+      "canonical_food": "gavvalu",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "ghevar",
+      "canonical_food": "ghevar",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "ginger",
+      "canonical_food": "ginger",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Ginger, fresh",
+      "ifct_code": "G014",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "gobi manchurian",
+      "canonical_food": "gobi manchurian",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "grape",
+      "canonical_food": "grape",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Grapes, seeded, round, green",
+      "ifct_code": "E023",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "grilled sandwich",
+      "canonical_food": "grilled sandwich",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "gujhia",
+      "canonical_food": "gujiya",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "gujiya",
+      "canonical_food": "gujiya",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "gulab jamun",
+      "canonical_food": "gulab jamun",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "hara bhara kabab",
+      "canonical_food": "hara bhara kabab",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "hot dogs",
+      "canonical_food": "hot dogs",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "ice cream",
+      "canonical_food": "ice cream",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "idiyappam",
+      "canonical_food": "idiyappam",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "idli",
+      "canonical_food": "idli",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "imarti",
+      "canonical_food": "imarti",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "jalebi",
+      "canonical_food": "jalebi",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "kaathi rolls",
+      "canonical_food": "kaathi rolls",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "kachori",
+      "canonical_food": "kachori",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "kadai paneer",
+      "canonical_food": "kadai paneer",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "kadhi pakoda",
+      "canonical_food": "kadhi pakoda",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "kajjikaya",
+      "canonical_food": "kajjikaya",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "kaju katli",
+      "canonical_food": "kaju katli",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "kakinada khaja",
+      "canonical_food": "kakinada khaja",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "kalakand",
+      "canonical_food": "kalakand",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "karela bharta",
+      "canonical_food": "karela bharta",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "kathi roll",
+      "canonical_food": "kaathi rolls",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "kebabs",
+      "canonical_food": "kebabs",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "khakhra",
+      "canonical_food": "khakhra",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "khandvi",
+      "canonical_food": "khandvi",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "kheer",
+      "canonical_food": "kheer",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "khichdi",
+      "canonical_food": "khichdi",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "khubani ka meetha",
+      "canonical_food": "khubani ka meetha",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "kiwi",
+      "canonical_food": "kiwi",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "kofta",
+      "canonical_food": "kofta",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "kulfi",
+      "canonical_food": "kulfi",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "kuzhi paniyaram",
+      "canonical_food": "kuzhi paniyaram",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "lassi",
+      "canonical_food": "lassi",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "ledikeni",
+      "canonical_food": "ledikeni",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "lemon",
+      "canonical_food": "lemon",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Lemon, juice",
+      "ifct_code": "E033",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "lemonade",
+      "canonical_food": "lemonade",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "lettuce",
+      "canonical_food": "lettuce",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Lettuce",
+      "ifct_code": "C025",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "litti chokha",
+      "canonical_food": "litti chokha",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "lyangcha",
+      "canonical_food": "lyangcha",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "maach jhol",
+      "canonical_food": "maach jhol",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "macaroni salad",
+      "canonical_food": "macaroni salad",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "makki di roti sarson da saag",
+      "canonical_food": "makki di roti sarson da saag",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "malapua",
+      "canonical_food": "malpua",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "malpua",
+      "canonical_food": "malpua",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "mango",
+      "canonical_food": "mango",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Mango, ripe, banganapalli",
+      "ifct_code": "E036",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "margherita pizza",
+      "canonical_food": "margherita pizza",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "masala dosa",
+      "canonical_food": "masala dosa",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "masala papad",
+      "canonical_food": "masala papad",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "medu vada",
+      "canonical_food": "medu vada",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "misal pav",
+      "canonical_food": "misal pav",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "mishti doi",
+      "canonical_food": "mishti doi",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "misi roti",
+      "canonical_food": "misi roti",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "missi roti",
+      "canonical_food": "missi roti",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "misti doi",
+      "canonical_food": "mishti doi",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "modak",
+      "canonical_food": "modak",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "momos",
+      "canonical_food": "momos",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "moong dal halwa",
+      "canonical_food": "moong dal halwa",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "muffin",
+      "canonical_food": "muffin",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "murukku",
+      "canonical_food": "murukku",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "mysore pak",
+      "canonical_food": "mysore pak",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "naan",
+      "canonical_food": "naan",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Wheat flour, refined",
+      "ifct_code": "A018",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "naan bread",
+      "canonical_food": "naan bread",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Wheat flour, refined",
+      "ifct_code": "A018",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "navratan korma",
+      "canonical_food": "navratan korma",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "neer dosa",
+      "canonical_food": "neer dosa",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "omelette",
+      "canonical_food": "omelette",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "onion",
+      "canonical_food": "onion",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Onion, big",
+      "ifct_code": "G017",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "onion pakoda",
+      "canonical_food": "onion pakoda",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "orange",
+      "canonical_food": "orange",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Orange, pulp",
+      "ifct_code": "E047",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "paani puri",
+      "canonical_food": "pani puri",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "pakode",
+      "canonical_food": "pakode",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "palak paneer",
+      "canonical_food": "palak paneer",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "pan cake",
+      "canonical_food": "pan cake",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "pan-fried prawns",
+      "canonical_food": "pan-fried prawns",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Tiger Prawns, orange",
+      "ifct_code": "Q008",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "paneer butter masala",
+      "canonical_food": "paneer butter masala",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "paneer masala",
+      "canonical_food": "paneer masala",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Paneer",
+      "ifct_code": "L003",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "paneer pizza",
+      "canonical_food": "paneer pizza",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "pani puri",
+      "canonical_food": "pani puri",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "paniyaram",
+      "canonical_food": "paniyaram",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "papad",
+      "canonical_food": "papad",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "papdi chaat",
+      "canonical_food": "papdi chaat",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "paprika",
+      "canonical_food": "paprika",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "paratha",
+      "canonical_food": "paratha",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Wheat flour, atta",
+      "ifct_code": "A019",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "patrode",
+      "canonical_food": "patrode",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "pav bhaji",
+      "canonical_food": "pav bhaji",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "peanut chikki",
+      "canonical_food": "peanut chikki",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "pear",
+      "canonical_food": "pear",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Pear",
+      "ifct_code": "E051",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "peas",
+      "canonical_food": "peas",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Peas, fresh",
+      "ifct_code": "D061",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "peda",
+      "canonical_food": "peda",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "pepperoni pizza",
+      "canonical_food": "pepperoni pizza",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "phirni",
+      "canonical_food": "phirni",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "pineapple",
+      "canonical_food": "pineapple",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Pineapple",
+      "ifct_code": "E053",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "pithe",
+      "canonical_food": "pithe",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "pizza",
+      "canonical_food": "pizza",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "poha",
+      "canonical_food": "poha",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "pomegranate",
+      "canonical_food": "pomegranate",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Pomegranate, maroon seeds",
+      "ifct_code": "E055",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "pongal",
+      "canonical_food": "pongal",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "poornalu",
+      "canonical_food": "poornalu",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "pootharekulu",
+      "canonical_food": "pootharekulu",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "popcorn",
+      "canonical_food": "popcorn",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "puri bhaji",
+      "canonical_food": "puri bhaji",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "qubani ka meetha",
+      "canonical_food": "khubani ka meetha",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "rabri",
+      "canonical_food": "rabri",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "radish",
+      "canonical_food": "radish",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Radish, elongate, white skin",
+      "ifct_code": "F010",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "raj kachori",
+      "canonical_food": "raj kachori",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "rajma",
+      "canonical_food": "rajma",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "rajma chawal",
+      "canonical_food": "rajma chawal",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "ras malai",
+      "canonical_food": "ras malai",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "rasgulla",
+      "canonical_food": "rasgulla",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "rava dosa",
+      "canonical_food": "rava dosa",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "rice cooked",
+      "canonical_food": "rice cooked",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Rice, parboiled, milled",
+      "ifct_code": "A014",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "sabudana khichdi",
+      "canonical_food": "sabudana khichdi",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "sabudana vada",
+      "canonical_food": "sabudana vada",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "samosa",
+      "canonical_food": "samosa",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "sandesh",
+      "canonical_food": "sandesh",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "sandwich",
+      "canonical_food": "sandwich",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "scrambled eggs",
+      "canonical_food": "scrambled eggs",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "seekh kebab",
+      "canonical_food": "seekh kebab",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "set dosa",
+      "canonical_food": "set dosa",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "sev puri",
+      "canonical_food": "sev puri",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "shankarpali",
+      "canonical_food": "shankarpali",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "sheer khurma",
+      "canonical_food": "sheer khurma",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "sheer korma",
+      "canonical_food": "sheer khurma",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "sheera",
+      "canonical_food": "sheera",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "shelled soy bean",
+      "canonical_food": "shelled soy bean",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Soya bean, white",
+      "ifct_code": "B025",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "shrikhand",
+      "canonical_food": "shrikhand",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "sohan halwa",
+      "canonical_food": "sohan halwa",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "sohan papdi",
+      "canonical_food": "sohan papdi",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "solkadhi",
+      "canonical_food": "solkadhi",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "spinach",
+      "canonical_food": "spinach",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Spinach",
+      "ifct_code": "C033",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "spring rolls",
+      "canonical_food": "spring rolls",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "sprouts",
+      "canonical_food": "sprouts",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "steamed momo",
+      "canonical_food": "steamed momo",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "stuffed karela",
+      "canonical_food": "stuffed karela",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "sunny side up eggs",
+      "canonical_food": "sunny side up eggs",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "sutar feni",
+      "canonical_food": "sutar feni",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "sweet potatoes",
+      "canonical_food": "sweet potatoes",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Sweet potato, brown skin",
+      "ifct_code": "F013",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "taco",
+      "canonical_food": "taco",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "thali",
+      "canonical_food": "thali",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "thukpa",
+      "canonical_food": "thukpa",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "tiramisu",
+      "canonical_food": "tiramisu",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "toast",
+      "canonical_food": "toast",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "tomato",
+      "canonical_food": "tomato",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Tomato, ripe, local",
+      "ifct_code": "D076",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "turnip",
+      "canonical_food": "turnip",
+      "mapping_type": "direct_ifct",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    },
+    {
+      "model_class": "unni appam",
+      "canonical_food": "unni appam",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "uttapam",
+      "canonical_food": "uttapam",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "vada pav",
+      "canonical_food": "vada pav",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "veggie burger",
+      "canonical_food": "veggie burger",
+      "mapping_type": "composable_from_ifct_ingredients",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "requires_recipe_definition",
+      "notes": "Use IFCT component foods only after a documented recipe/ingredient ratio is defined."
+    },
+    {
+      "model_class": "waffle",
+      "canonical_food": "waffle",
+      "mapping_type": "needs_secondary_source",
+      "ifct_food": null,
+      "ifct_code": null,
+      "status": "nutrition_pending",
+      "notes": "No defensible prepared-food match was established from the supplied IFCT index alone."
+    },
+    {
+      "model_class": "watermelon",
+      "canonical_food": "watermelon",
+      "mapping_type": "direct_ifct",
+      "ifct_food": "Water melon, dark green (sugar baby)",
+      "ifct_code": "E065",
+      "status": "usable_as_food_record",
+      "notes": "IFCT record is an ingredient/raw-food record; serving basis must be defined."
+    }
+  ]
+}

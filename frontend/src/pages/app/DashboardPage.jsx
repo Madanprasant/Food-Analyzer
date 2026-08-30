@@ -1,0 +1,18 @@
+import { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+
+import { apiRequest } from "../../lib/api";
+import { AppNav } from "./AnalyzeFoodPage";
+
+export default function DashboardPage() {
+  const navigate = useNavigate();
+  const [history, setHistory] = useState([]);
+  const [daily, setDaily] = useState(null);
+  const [error, setError] = useState("");
+  const user = JSON.parse(localStorage.getItem("platesignal_user") || "null");
+  useEffect(() => { if (!user) { navigate("/login"); return; } Promise.all([apiRequest("/food/history"), apiRequest("/nutrition/totals/daily")]).then(([nextHistory, nextDaily]) => { setHistory(nextHistory); setDaily(nextDaily); }).catch((requestError) => setError(requestError.message)); }, [navigate]);
+  if (!user) return null;
+  const confirmed = history.filter((item) => item.status === "confirmed" || item.status === "confirmed_pending_nutrition");
+  const dailyCalories = daily?.totals?.calories_kcal;
+  return <main className="app-shell"><AppNav /><section className="dashboard"><div className="dashboard-head"><div><div className="terminal-label">PERSONAL DASHBOARD</div><h1>Good to see you, {user.profile.display_name}.</h1><p>Your dashboard fills with confirmed meals—not estimates.</p></div><Link className="button" to="/analyze">Analyze food ↗</Link></div><div className="dashboard-grid"><article className="dash-card target-card"><div className="terminal-label">DAILY STARTING TARGET</div><strong>{user.profile.calorie_target ?? "—"}<small>{user.profile.calorie_target ? " kcal" : " set your profile"}</small></strong><p>{user.profile.target_source === "suggested" ? "Suggested from your profile and goal." : "Your selected daily calorie target."}</p></article><article className="dash-card"><div className="terminal-label">SOURCED CALORIES TODAY</div><strong>{dailyCalories ?? "—"}<small>{dailyCalories !== null && dailyCalories !== undefined ? " kcal" : " no sourced meals"}</small></strong><p>{daily?.nutrition_unavailable_meal_count ? `${daily.nutrition_unavailable_meal_count} meal(s) are pending nutrition data.` : "Totals use only saved nutrition snapshots."}</p></article><article className="dash-card"><div className="terminal-label">CONFIRMED MEALS</div><strong>{confirmed.length}</strong><p>{daily ? `${daily.meals_with_nutrition} meal(s) have sourced nutrition.` : "Loading saved meals…"}</p></article></div><section className="history-card"><div><div className="terminal-label">RECENT MEALS</div><h2>Confirmed history</h2></div>{error && <p className="form-error">{error}</p>}{history.length === 0 ? <div className="empty-history"><p>No meals yet. Start with a clear photo of your next plate.</p><Link className="text-link" to="/analyze">Analyze a meal →</Link></div> : <div className="history-list">{history.map((item) => <article key={item.analysis_id}><div><strong>{item.final_food || item.predicted_food}</strong><small>{new Date(item.created_at).toLocaleString()}</small></div><span>{item.status === "awaiting_confirmation" ? "Needs confirmation" : item.status === "confirmed" ? "Nutrition saved" : "Nutrition pending"}</span></article>)}</div>}</section></section></main>;
+}

@@ -1,0 +1,39 @@
+# Secrets and runtime state
+.env
+.env.*
+!.env.example
+
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+
+# Node / frontend
+node_modules/
+dist/
+coverage/
+
+# User uploads
+uploads/
+
+# Firebase / service account secrets
+backend/secrets/
+
+# Model weights
+# Model files are supplied separately and should not enter source control.
+ml/models/*.pth
+ml/models/*.pt
+!ml/models/.gitkeep
+
+# Optional local model/cache files
+*.onnx
+*.h5
+*.keras
+*.pkl
+*.joblib
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
