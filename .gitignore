@@ -1,40 +1,73 @@
-# Secrets and runtime state
+# =========================
+# Environment / Secrets
+# =========================
 .env
 .env.*
 !.env.example
 
+# Firebase / service account secrets
+backend/secrets/
+**/serviceAccountKey.json
+**/*firebase-adminsdk*.json
+
+# =========================
+# Python
+# =========================
 __pycache__/
 *.py[cod]
 .pytest_cache/
 .venv/
+venv/
+*.egg-info/
 
-# Node / frontend
+# =========================
+# Node / Frontend
+# =========================
 node_modules/
 dist/
 coverage/
+.next/
+.npm/
+*.log
 
-# User uploads
+# =========================
+# User uploads / generated files
+# =========================
 uploads/
 model_versions/
 
-# Firebase / service account secrets
-backend/secrets/
-
-# Model weights
-# Model files are supplied separately and should not enter source control.
+# =========================
+# ML model weights
+# =========================
 ml/models/*.pth
 ml/models/*.pt
+ml/models/*.onnx
+ml/models/*.h5
+ml/models/*.keras
+ml/models/*.pkl
+ml/models/*.joblib
+
+# Keep the models directory itself in Git
 !ml/models/.gitkeep
 
-# Optional local model/cache files
-*.onnx
-*.h5
-*.keras
-*.pkl
-*.joblib
+# =========================
+# Data / local generated files
+# =========================
+*.csv
+*.sqlite
+*.db
 
+# =========================
 # IDE / OS
+# =========================
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.temp
+*.bak
