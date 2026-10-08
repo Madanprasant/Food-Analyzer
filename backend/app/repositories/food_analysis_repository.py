@@ -62,3 +62,13 @@ class FoodAnalysisRepository:
             {"userId": ObjectId(user_id), "createdAt": {"$gte": start, "$lte": end}, "status": {"$in": ["confirmed", "confirmed_pending_nutrition"]}}
         )
         return await cursor.to_list(length=None)
+
+    async def list_recent_confirmed_for_user(self, user_id: str, limit: int = 12) -> list[dict]:
+        """Return a small, user-scoped context window for conversational answers."""
+        if not ObjectId.is_valid(user_id):
+            return []
+        safe_limit = max(1, min(limit, 20))
+        cursor = self._collection.find(
+            {"userId": ObjectId(user_id), "status": {"$in": ["confirmed", "confirmed_pending_nutrition"]}}
+        ).sort("createdAt", -1).limit(safe_limit)
+        return await cursor.to_list(length=safe_limit)

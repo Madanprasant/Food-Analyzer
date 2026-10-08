@@ -63,6 +63,13 @@ class MongoDatabase:
         await self.database.foodAnalyses.create_index("createdAt", name="analysis_created_at")
         await self.database.revokedTokens.create_index("expiresAt", expireAfterSeconds=0, name="token_expiry")
         await self.database.revokedTokens.create_index("jti", unique=True, name="token_jti_unique")
+        await self.database.modelVersions.create_index(
+            [("modelName", ASCENDING), ("version", ASCENDING)], unique=True, name="model_name_version_unique"
+        )
+        await self.database.modelVersions.create_index(
+            "active", unique=True, partialFilterExpression={"active": True}, name="single_active_model"
+        )
+        await self.database.modelVersions.create_index("uploadedAt", name="model_uploaded_at")
 
     @staticmethod
     def now() -> datetime:

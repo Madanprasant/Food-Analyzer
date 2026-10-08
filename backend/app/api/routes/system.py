@@ -2,7 +2,7 @@ from fastapi import APIRouter, Request, status
 from fastapi.responses import JSONResponse
 
 from app.schemas.model import FoodClassResponse, ModelStatusResponse
-from app.services.classifiers.efficientnet_v2_s import EfficientNetV2SClassifier
+from app.services.classifiers.base import FoodClassifier
 
 router = APIRouter(tags=["system"])
 
@@ -22,7 +22,7 @@ async def health(request: Request) -> ModelStatusResponse | JSONResponse:
             ).model_dump(),
         )
     classifier = service.classifier
-    class_count = len(classifier.classes) if isinstance(classifier, EfficientNetV2SClassifier) else None
+    class_count = len(classifier.classes) if isinstance(classifier, FoodClassifier) else None
     return ModelStatusResponse(
         status="ready",
         model_version=settings.model_version,
@@ -34,7 +34,7 @@ async def health(request: Request) -> ModelStatusResponse | JSONResponse:
 @router.get("/food/classes", response_model=FoodClassResponse)
 async def list_food_classes(request: Request) -> FoodClassResponse:
     classifier = request.app.state.classifier_service.classifier
-    if not isinstance(classifier, EfficientNetV2SClassifier):
+    if not isinstance(classifier, FoodClassifier):
         return FoodClassResponse(classes=[], total=0)
     classes = classifier.classes
     return FoodClassResponse(classes=classes, total=len(classes))

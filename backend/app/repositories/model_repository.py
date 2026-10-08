@@ -21,6 +21,9 @@ class ModelRepository:
     async def list_all(self) -> list[dict]:
         return await self._collection.find({}).sort("uploadedAt", -1).to_list(length=250)
 
+    async def find_active(self) -> dict | None:
+        return await self._collection.find_one({"active": True})
+
     async def find_by_id(self, model_id: str) -> dict | None:
         if not ObjectId.is_valid(model_id):
             return None

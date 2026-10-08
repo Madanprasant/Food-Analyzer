@@ -22,6 +22,7 @@ class UserRepository:
             "email": email.lower(),
             "passwordHash": password_hash,
             "profile": {"displayName": display_name},
+            "role": "user",
             "isOnboarded": False,
             "createdAt": now,
             "updatedAt": now,
@@ -45,6 +46,7 @@ class UserRepository:
             "email": email.lower(),
             "firebaseUid": firebase_uid,
             "authProvider": "firebase-google",
+            "role": "user",
             "profile": {"displayName": display_name},
             "isOnboarded": False,
             "createdAt": now,
@@ -77,4 +79,15 @@ class UserRepository:
             {"_id": ObjectId(user_id)},
             {"$set": {"profile": profile, "isOnboarded": True, "updatedAt": datetime.utcnow()}},
         )
+        return await self.find_by_id(user_id)
+
+    async def grant_admin_roles(self, emails: list[str]) -> None:
+        """Bootstrap only explicitly configured server-side administrator accounts."""
+        if emails:
+            await self._collection.update_many({"email": {"$in": emails}}, {"$set": {"role": "admin"}})
+
+    async def set_role(self, user_id: str, role: str) -> dict | None:
+        if not ObjectId.is_valid(user_id):
+            return None
+        await self._collection.update_one({"_id": ObjectId(user_id)}, {"$set": {"role": role}})
         return await self.find_by_id(user_id)

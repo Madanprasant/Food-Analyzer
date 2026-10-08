@@ -8,11 +8,11 @@ The seed at `backend/data/platesignal_nutrition_seed.json` contains all 239 PLAT
 - 87 recipe/composite mappings have no documented ingredient quantities yet and remain `nutrition_pending`.
 - 116 foods require a suitable secondary source and remain `nutrition_pending`.
 
-The mapping file has one documented classification difference: it marks **turnip** as a usable direct match while the supplied nutrition seed marks it `SECONDARY_SOURCE_REQUIRED`. The import follows the supplied nutrition seed, so turnip remains pending until a reviewed source decision resolves the discrepancy.
+The mapping file has one documented classification difference: it marks **turnip** as a usable direct match while the supplied nutrition seed marks it `SECONDARY_SOURCE_REQUIRED`. The import follows the supplied nutrition seed, so turnip remains pending until a reviewed source decision resolves4 the discrepancy.
 
-Direct records cite **ICMR-NIN Indian Food Composition Tables (IFCT) 2017**, the supplied machine-readable IFCT index, and their IFCT food code. The seed’s source energy is retained as `energy_kj`. The interface displays kcal only as the deterministic conversion `kJ / 4.184`, clearly recorded in `calculationMethod`.
-
+Direct records cite **ICMR-NIN Indian Food Composition Tables (IFCT) 2017**, the supplied machine-readable IFCT index, and their IFCT food code. The seed’s source energy is retained as `energy_kj`. The interface displays kcal only as the deterministic conversion `kJ / 4.184`, recorded in `calculationMethod`.
 ## MongoDB nutrition record
+
 
 `nutritionFoods` holds one record per model class. Important fields are:
 

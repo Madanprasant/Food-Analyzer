@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import hashlib
+import asyncio
 from datetime import datetime, timezone
 from pathlib import Path
 from uuid import uuid4
@@ -21,6 +22,7 @@ class ModelManagementService:
         self.settings = settings
         self.repository = repository
         self.classifier_service = classifier_service
+        self._activation_lock = asyncio.Lock()
 
     async def ensure_baseline(self) -> None:
         await self.repository.ensure_baseline({
@@ -43,8 +45,12 @@ class ModelManagementService:
     ) -> dict:
         if not model_name.strip() or not version.strip():
             raise ModelValidationError("Model name and version are required.")
-        if architecture != "efficientnet_v2_s":
-            raise ModelValidationError("Unsupported architecture. Select EfficientNetV2-S for this release.")
+        if len(model_name.strip()) > 120 or len(version.strip()) > 120:
+            raise ModelValidationError("Model name and version must be 120 characters or fewer.")
+        if not model_bytes or not class_bytes:
+            raise ModelValidationError("Both a model file and class_names.json are required.")
+        if architecture not in {"auto", "efficientnet_v2_s", "convnextv2_v2_base"}:
+            raise ModelValidationError("Unsupported architecture selection.")
         upload_id = uuid4().hex
         target = self.settings.model_upload_dir / upload_id
         target.mkdir(parents=True, exist_ok=False)
@@ -67,34 +73,52 @@ class ModelManagementService:
         document = {
             "modelName": model_name.strip(),
             "version": version.strip(),
-            "architecture": architecture,
+            "architecture": getattr(candidate, "architecture", "efficientnet_v2_s"),
             "classCount": len(candidate.classes),
             "modelFilePath": str(model_path),
             "classNamesFilePath": str(classes_path),
             "uploadedBy": uploaded_by,
             "uploadedAt": datetime.now(timezone.utc),
             "active": False,
-            "status": "uploaded",
+            "status": "validated",
             "isBaseline": False,
             "checksum": hashlib.sha256(model_bytes).hexdigest(),
         }
         return await self.repository.create(document)
 
     async def activate(self, model_id: str, activated_by: object) -> dict:
-        metadata = await self.repository.find_by_id(model_id)
-        if not metadata:
-            raise ModelValidationError("Model version was not found.")
+        async with self._activation_lock:
+            metadata = await self.repository.find_by_id(model_id)
+            if not metadata:
+                raise ModelValidationError("Model version was not found.")
+            if metadata.get("status") == "invalid":
+                raise ModelValidationError("This invalid model version cannot be activated.")
+            try:
+                candidate = self.classifier_service.validate_candidate(
+                    model_path=metadata["modelFilePath"], class_names_path=metadata["classNamesFilePath"],
+                    model_name=metadata["modelName"], model_version=metadata["version"], architecture=metadata["architecture"],
+                )
+            except Exception as error:
+                raise ModelValidationError(f"Model cannot be activated because validation failed: {error}") from error
+            # Only a fully loaded candidate can reach this switch; the existing instance remains
+            # available until the final in-memory assignment.
+            updated = await self.repository.set_active(model_id, activated_by, datetime.now(timezone.utc))
+            self.classifier_service.activate_candidate(candidate)
+            return updated
+
+    async def load_active_model(self) -> None:
+        """Restore the selected active version at startup without replacing a usable baseline on failure."""
+        active = await self.repository.find_active()
+        if not active or active.get("isBaseline"):
+            return
         try:
             candidate = self.classifier_service.validate_candidate(
-                model_path=metadata["modelFilePath"], class_names_path=metadata["classNamesFilePath"],
-                model_name=metadata["modelName"], model_version=metadata["version"], architecture=metadata["architecture"],
+                model_path=active["modelFilePath"], class_names_path=active["classNamesFilePath"],
+                model_name=active["modelName"], model_version=active["version"], architecture=active["architecture"],
             )
-        except Exception as error:
-            raise ModelValidationError(f"Model cannot be activated because validation failed: {error}") from error
-        # Only after a fully loaded candidate exists do metadata and prediction state switch.
-        updated = await self.repository.set_active(model_id, activated_by, datetime.now(timezone.utc))
+        except Exception:
+            return
         self.classifier_service.activate_candidate(candidate)
-        return updated
 
     @staticmethod
     def _checksum(path: Path) -> str:

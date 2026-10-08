@@ -3,6 +3,9 @@ import AuthPage from "./pages/auth/AuthPage";
 import OnboardingPage from "./pages/app/OnboardingPage";
 import AnalyzeFoodPage from "./pages/app/AnalyzeFoodPage";
 import DashboardPage from "./pages/app/DashboardPage";
+import ChatPage from "./pages/app/ChatPage";
+import AdminLoginPage from "./pages/admin/AdminLoginPage";
+import ModelManagementPage from "./pages/admin/ModelManagementPage";
 
 const Check = () => <span aria-hidden="true" className="check">✓</span>;
 
@@ -83,6 +86,9 @@ export default function App() {
       <Route path="/onboarding" element={<OnboardingPage />} />
       <Route path="/dashboard" element={<DashboardPage />} />
       <Route path="/analyze" element={<AnalyzeFoodPage />} />
+      <Route path="/chat" element={<ChatPage />} />
+      <Route path="/admin/login" element={<AdminLoginPage />} />
+      <Route path="/admin/models" element={<ModelManagementPage />} />
       <Route path="*" element={<PlaceholderPage title="Page not found" />} />
     </Routes>
   );

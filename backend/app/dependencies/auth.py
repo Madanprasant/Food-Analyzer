@@ -34,3 +34,14 @@ async def get_current_user(
     if not user:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Account no longer exists.")
     return user
+
+
+async def require_admin(
+    user: dict = Depends(get_current_user), request: Request = None,
+) -> dict:
+    """Authorize from database role or the server-side bootstrap allowlist only."""
+    settings = request.app.state.settings
+    email = str(user.get("email", "")).lower()
+    if user.get("role") != "admin" and email not in settings.admin_emails:
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Administrator access is required.")
+    return user

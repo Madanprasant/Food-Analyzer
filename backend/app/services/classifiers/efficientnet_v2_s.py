@@ -21,6 +21,7 @@ class EfficientNetV2SClassifier(FoodClassifier):
     """EfficientNetV2-S adapter for the supplied 239-class state dictionary."""
 
     model_name = "EfficientNetV2-S"
+    architecture = "efficientnet_v2_s"
 
     def __init__(
         self, settings: Settings, *, model_path: Path | None = None, class_names_path: Path | None = None,

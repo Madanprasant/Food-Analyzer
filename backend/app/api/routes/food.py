@@ -19,7 +19,7 @@ from app.schemas.food import (
     FoodHistoryItem,
     TopPredictionResponse,
 )
-from app.services.classifiers.efficientnet_v2_s import EfficientNetV2SClassifier
+from app.services.classifiers.base import FoodClassifier
 from app.services.image_storage import LocalImageStorage
 from app.services.nutrition.calculator import calculate_serving
 from app.services.nutrition.meal_balance import calculate_meal_balance
@@ -70,7 +70,7 @@ async def analyze_food(
     try:
         classifier = request.app.state.classifier_service.classifier
         result = await run_in_threadpool(classifier.predict, decoded_image)
-        if not isinstance(classifier, EfficientNetV2SClassifier):
+        if not isinstance(classifier, FoodClassifier):
             raise RuntimeError("The configured classifier does not provide food-class metadata.")
         suffix = Path(image.filename or "upload.jpg").suffix
         image_reference = await run_in_threadpool(LocalImageStorage(settings.upload_dir).save, content, suffix)
@@ -107,7 +107,7 @@ async def confirm_food(
     database: MongoDatabase = Depends(get_database),
 ) -> ConfirmFoodResponse:
     classifier = request.app.state.classifier_service.classifier
-    if not isinstance(classifier, EfficientNetV2SClassifier) or payload.final_food not in classifier.classes:
+    if not isinstance(classifier, FoodClassifier) or payload.final_food not in classifier.classes:
         raise HTTPException(status_code=422, detail="Choose a food from the available model classes.")
     try:
         existing = await FoodAnalysisRepository(database).find_for_user(payload.analysis_id, str(user["_id"]))

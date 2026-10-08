@@ -49,8 +49,10 @@ class Settings(BaseSettings):
     admin_emails: list[str] = Field(default_factory=list)
     nutrition_seed_path: Path = PROJECT_ROOT / "backend" / "data" / "platesignal_nutrition_seed.json"
 
-    llm_provider: str | None = None
+    llm_provider: str = "gemini"
     llm_api_key: str | None = None
+    gemini_api_key: str | None = None
+    gemini_model: str = "gemini-2.5-flash-lite"
     rag_provider: str | None = None
     rag_database: str | None = None
     firebase_project_id: str | None = None

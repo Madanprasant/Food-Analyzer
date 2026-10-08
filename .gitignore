@@ -15,6 +15,7 @@ coverage/
 
 # User uploads
 uploads/
+model_versions/
 
 # Firebase / service account secrets
 backend/secrets/

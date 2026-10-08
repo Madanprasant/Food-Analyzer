@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 import { apiRequest } from "../../lib/api";
 
@@ -70,5 +70,6 @@ export default function AnalyzeFoodPage() {
 }
 
 export function AppNav() {
-  return <nav className="app-nav"><Link className="wordmark" to="/dashboard"><span className="wordmark-mark">⌁</span> PLATESIGNAL</Link><div><Link to="/dashboard">Dashboard</Link><Link className="nav-active" to="/analyze">Analyze food</Link><button type="button" onClick={() => { localStorage.removeItem("platesignal_access_token"); localStorage.removeItem("platesignal_user"); window.location.assign("/"); }}>Log out</button></div></nav>;
+  const location = useLocation();
+  return <nav className="app-nav"><Link className="wordmark" to="/dashboard"><span className="wordmark-mark">⌁</span> PLATESIGNAL</Link><div><Link className={location.pathname === "/dashboard" ? "nav-active" : ""} to="/dashboard">Dashboard</Link><Link className={location.pathname === "/analyze" ? "nav-active" : ""} to="/analyze">Analyze food</Link><Link className={location.pathname === "/chat" ? "nav-active" : ""} to="/chat">Assistant</Link><button type="button" onClick={() => { localStorage.removeItem("platesignal_access_token"); localStorage.removeItem("platesignal_user"); window.location.assign("/"); }}>Log out</button></div></nav>;
 }
